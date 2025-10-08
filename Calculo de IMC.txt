@@ -1,0 +1,21 @@
+peso= float(input("Peso(Kg):"))
+altura= float(input("Altura(m):"))
+
+imc= peso/(altura*altura)
+print("IMC=%.2f"%imc)
+
+if imc<22:
+       print ("Magro")
+
+else:
+   
+   if imc>26 and imc <22:
+            print("Normal")
+   else:        
+        
+        if imc>26 and imc <30:
+            print("Acima do peso")
+
+        else:
+
+            print("Obeso")    
