@@ -1,0 +1,9 @@
+
+valorpintor = 100
+valordoauxi = 70
+
+diastrabalhado = float(input("Número de dias trabalhados:"))
+
+Totalpagar= diastrabalhado*(valorpintor + valordoauxi)
+
+print(f"Total a pagar = R${Totalpagar}")
