@@ -1,0 +1,22 @@
+consumo=float(input("Digite o consumo em kWh: "))
+if consumo <= 100:
+    valor_kwh = consumo*0.05 
+
+elif consumo <= 200:
+    valor_kwh = consumo*0.10
+
+elif consumo <= 500:
+    valor_kwh = consumo*0.15
+
+else:   
+    valor_kwh=consumo*0.08    
+print(f'O valor parcial é {valor_kwh:.2f}')
+
+icms = 0.10* valor_kwh
+print(f"Valor do ICMS: R$ %.2f"% icms)
+
+
+total_pagar = valor_kwh+ icms
+print(f"Valor total a pagar: R$ %.2f" % total_pagar)
+
+# Cálculo do valor a pagar de uma conta de energia elétrica com ICMS    
